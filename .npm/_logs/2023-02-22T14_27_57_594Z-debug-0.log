@@ -1,0 +1,53 @@
+0 verbose cli /snap/node/6895/bin/node /snap/node/6895/bin/npm
+1 info using npm@8.19.2
+2 info using node@v16.18.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/snap/node/6895/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/amift/Desktop/salt/app/customer-service/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 4ms
+11 timing config:load:file:/home/amift/Desktop/salt/app/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/snap/node/6895/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 10ms
+19 timing npm:load:configload Completed in 10ms
+20 timing npm:load:mkdirpcache Completed in 2ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm start
+23 verbose argv "start"
+24 timing npm:load:setTitle Completed in 0ms
+25 timing config:load:flatten Completed in 2ms
+26 timing npm:load:display Completed in 6ms
+27 verbose logfile logs-max:10 dir:/home/amift/Desktop/salt/app/.npm/_logs
+28 verbose logfile /home/amift/Desktop/salt/app/.npm/_logs/2023-02-22T14_27_57_594Z-debug-0.log
+29 timing npm:load:logFile Completed in 3ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 23ms
+33 silly logfile done cleaning log files
+34 timing command:run-script Completed in 8ms
+35 timing command:start Completed in 10ms
+36 verbose stack Error: ENOENT: no such file or directory, open '/home/amift/Desktop/salt/app/customer-service/package.json'
+37 verbose cwd /home/amift/Desktop/salt/app/customer-service
+38 verbose Linux 5.19.0-32-generic
+39 verbose node v16.18.1
+40 verbose npm  v8.19.2
+41 error code ENOENT
+42 error syscall open
+43 error path /home/amift/Desktop/salt/app/customer-service/package.json
+44 error errno -2
+45 error enoent ENOENT: no such file or directory, open '/home/amift/Desktop/salt/app/customer-service/package.json'
+46 error enoent This is related to npm not being able to find a file.
+46 error enoent
+47 verbose exit -2
+48 timing npm Completed in 41ms
+49 verbose code -2
+50 error A complete log of this run can be found in:
+50 error     /home/amift/Desktop/salt/app/.npm/_logs/2023-02-22T14_27_57_594Z-debug-0.log

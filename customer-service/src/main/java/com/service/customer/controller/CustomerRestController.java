@@ -27,7 +27,7 @@ public class CustomerRestController {
 
     // API Create Customer
     @PostMapping("createCustomer")
-    private DefaultResponse createCustomer(@Valid @RequestBody CustomerRequest request) {
+    public DefaultResponse createCustomer(@Valid @RequestBody CustomerRequest request) {
         CustomerData customerData = service.createCustomer(request);
         CustomerResponse customerResponse =  constructCustomerResponse(customerData);
         return constructCreateOrUpdateOrFindByIdCustomerResponse(customerResponse);
@@ -35,7 +35,7 @@ public class CustomerRestController {
 
     // API Update Customer
     @PutMapping("updateCustomer/{id}")
-    private DefaultResponse updateCustomer(@PathVariable Integer id,
+    public DefaultResponse updateCustomer(@PathVariable Integer id,
                                            @Valid @RequestBody CustomerRequest request) {
         CustomerData customerData = service.updateCustomer(request, id);
         CustomerResponse customerResponse = constructCustomerResponse(customerData);
