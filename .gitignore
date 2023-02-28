@@ -33,3 +33,7 @@ build/
 .vscode/
 
 client/node_modules
+
+.npm
+.mvn/wrapper
+.config
