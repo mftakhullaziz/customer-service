@@ -132,11 +132,10 @@ class CustomerRestControllerTest {
 
     private List<CustomerData> mockReturnListCustomerData() {
         return Collections.singletonList(
-                CustomerData.builder()
-                        .id(id).name(name).address(address)
-                        .city(city).province(province).status(status)
-                        .registrationDate(Timestamp.valueOf(dateTime))
-                        .build());
+                CustomerData.builder().id(id).name(name).address(address).
+                        city(city).province(province).status(status).
+                        registrationDate(Timestamp.valueOf(dateTime)).
+                        build());
     }
 
     private CustomerData mockReturnCustomerData() {
